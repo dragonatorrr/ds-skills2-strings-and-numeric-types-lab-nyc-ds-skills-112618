@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="6" name="pytest" skips="0" tests="7" time="0.458"><testcase classname="pytests.test_index" file="pytests/test_index.py" line="9" name="test_conda_environment_activated" time="0.002535104751586914"></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="12" name="test_ceo" time="0.0024263858795166016"><failure message="AssertionError: the string assigned to ceo must be in all capital letters, CEO
+assert &apos;Ceo&apos; == &apos;CEO&apos;
+  - Ceo
+  + CEO">def test_ceo():
+        assert type(ceo) == type(&quot;&quot;), &quot;the variable, ceo, must be assigned to a string&quot;
+&gt;       assert ceo == &quot;CEO&quot;, &quot;the string assigned to ceo must be in all capital letters, CEO&quot;
+E       AssertionError: the string assigned to ceo must be in all capital letters, CEO
+E       assert &apos;Ceo&apos; == &apos;CEO&apos;
+E         - Ceo
+E         + CEO
+
+pytests/test_index.py:15: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="16" name="test_art_vandelay" time="0.0010585784912109375"><failure message="AssertionError: the string assigned to art_vandelay must be in title case
+assert &apos;art vandelay&apos; == &apos;Art Vandelay&apos;
+  - art vandelay
+  ? ^   ^
+  + Art Vandelay
+  ? ^   ^">def test_art_vandelay():
+        assert type(art_vandelay) == type(&quot;&quot;), &quot;the variable, art_vandelay, must be assigned to a string&quot;
+&gt;       assert art_vandelay == &quot;Art Vandelay&quot;, &quot;the string assigned to art_vandelay must be in title case&quot;
+E       AssertionError: the string assigned to art_vandelay must be in title case
+E       assert &apos;art vandelay&apos; == &apos;Art Vandelay&apos;
+E         - art vandelay
+E         ? ^   ^
+E         + Art Vandelay
+E         ? ^   ^
+
+pytests/test_index.py:19: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="20" name="test_ends_with_com" time="0.001216888427734375"><failure message="AssertionError: the variable, ends_with_com, must be assigned to a Boolean value
+assert &lt;class &apos;str&apos;&gt; == &lt;class &apos;bool&apos;&gt;
+ +  where &lt;class &apos;str&apos;&gt; = type(&apos;art.vandelay@vandelay.co&apos;)
+ +  and   &lt;class &apos;bool&apos;&gt; = type(True)">def test_ends_with_com():
+&gt;       assert type(ends_with_com) == type(True), &quot;the variable, ends_with_com, must be assigned to a Boolean value&quot;
+E       AssertionError: the variable, ends_with_com, must be assigned to a Boolean value
+E       assert &lt;class &apos;str&apos;&gt; == &lt;class &apos;bool&apos;&gt;
+E        +  where &lt;class &apos;str&apos;&gt; = type(&apos;art.vandelay@vandelay.co&apos;)
+E        +  and   &lt;class &apos;bool&apos;&gt; = type(True)
+
+pytests/test_index.py:22: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="24" name="test_web_address" time="0.0010442733764648438"><failure message="AssertionError: the string assigned to web_address must be prepended with www. -- think about how to add www. to the beginning of a string
+assert &apos;vandelay.com&apos; == &apos;www.vandelay.com&apos;
+  - vandelay.com
+  + www.vandelay.com
+  ? ++++">def test_web_address():
+        assert type(web_address) == type(&quot;&quot;), &quot;the variable, web_address, must be assigned to a string&quot;
+&gt;       assert web_address == &quot;www.vandelay.com&quot;, &quot;the string assigned to web_address must be prepended with www. -- think about how to add www. to the beginning of a string&quot;
+E       AssertionError: the string assigned to web_address must be prepended with www. -- think about how to add www. to the beginning of a string
+E       assert &apos;vandelay.com&apos; == &apos;www.vandelay.com&apos;
+E         - vandelay.com
+E         + www.vandelay.com
+E         ? ++++
+
+pytests/test_index.py:27: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="28" name="test_phone_num_one" time="0.001394033432006836"><failure message="AssertionError: the variable, phone_num_one, must be assigned to a integer
+assert &lt;class &apos;str&apos;&gt; == &lt;class &apos;int&apos;&gt;
+ +  where &lt;class &apos;str&apos;&gt; = type(&apos;7285553334&apos;)
+ +  and   &lt;class &apos;int&apos;&gt; = type(100)">def test_phone_num_one():
+&gt;       assert type(phone_num_one) == type(100), &quot;the variable, phone_num_one, must be assigned to a integer&quot;
+E       AssertionError: the variable, phone_num_one, must be assigned to a integer
+E       assert &lt;class &apos;str&apos;&gt; == &lt;class &apos;int&apos;&gt;
+E        +  where &lt;class &apos;str&apos;&gt; = type(&apos;7285553334&apos;)
+E        +  and   &lt;class &apos;int&apos;&gt; = type(100)
+
+pytests/test_index.py:30: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="32" name="test_phone_num_two" time="0.001321554183959961"><failure message="AssertionError: the variable, phone_num_two, must be assigned to a integer
+assert &lt;class &apos;str&apos;&gt; == &lt;class &apos;int&apos;&gt;
+ +  where &lt;class &apos;str&apos;&gt; = type(&apos;72855533341&apos;)
+ +  and   &lt;class &apos;int&apos;&gt; = type(100)">def test_phone_num_two():
+&gt;       assert type(phone_num_two) == type(100), &quot;the variable, phone_num_two, must be assigned to a integer&quot;
+E       AssertionError: the variable, phone_num_two, must be assigned to a integer
+E       assert &lt;class &apos;str&apos;&gt; == &lt;class &apos;int&apos;&gt;
+E        +  where &lt;class &apos;str&apos;&gt; = type(&apos;72855533341&apos;)
+E        +  and   &lt;class &apos;int&apos;&gt; = type(100)
+
+pytests/test_index.py:34: AssertionError</failure></testcase></testsuite>
